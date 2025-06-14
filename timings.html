@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Timings - Nandhu Physiotherapy Clinic & Rehab</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #000;
+    }
+
+    header {
+      background: #2b7a78;
+      color: white;
+      padding: 1.5rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.8rem;
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      cursor: pointer;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0.5rem 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 3rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    }
+
+    h1, h2 {
+      color: #000;
+    }
+
+    h2 {
+      margin-bottom: 1.5rem;
+      font-size: 1.7rem;
+      border-bottom: 2px solid #2b7a78;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.2rem;
+    }
+
+    li {
+      margin: 1rem 0;
+      padding: 1rem;
+      background-color: #f1f1f1;
+      border-left: 5px solid #2b7a78;
+      border-radius: 6px;
+    }
+
+    li strong {
+      display: inline-block;
+      width: 110px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #def2f1;
+      margin-top: 3rem;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #2b7a78;
+        padding-bottom: 1rem;
+      }
+
+      nav.show {
+        display: flex;
+      }
+
+      nav a {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+      }
+
+      header h1 {
+        font-size: 1.3rem;
+      }
+
+      section {
+        margin: 2rem 1rem;
+        padding: 2rem 1rem;
+      }
+
+      ul {
+        font-size: 1.05rem;
+      }
+
+      li strong {
+        width: auto;
+        margin-bottom: 0.5rem;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Clinic Timings</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="timings.html">Timings</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Opening Hours</h2>
+    <ul>
+      <li><strong>Morning:</strong> 9.00 AM – 12.00 PM</li>
+      <li><strong>Evening:</strong> 4.00 PM – 9.00 PM</li>
+      <li><strong>Sunday:</strong> 9.00 AM – 12.00 PM</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nandhu Physiotherapy Clinic & Rehab. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("mainNav").classList.toggle("show");
+    }
+  </script>
+</body>
+</html>

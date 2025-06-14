@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services - Nandhu Physiotherapy Clinic & Rehab</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #17252a;
+    }
+
+    header {
+      background: #2b7a78;
+      color: white;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.8rem;
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+      cursor: pointer;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0.5rem 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-image: url('services-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(2px);
+    }
+
+    section h2, section ul, section li {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+
+    h1, h2 {
+      color: #17252a;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #def2f1;
+      margin-top: 2rem;
+    }
+
+    /* Responsive styling */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #2b7a78;
+        padding-bottom: 1rem;
+      }
+
+      nav.show {
+        display: flex;
+      }
+
+      nav a {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+      }
+
+      header h1 {
+        font-size: 1.3rem;
+        text-align: center;
+      }
+
+      section {
+        margin: 1.5rem 1rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Physiotherapy Services</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="timings.html">Timings</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>What We Offer</h2>
+    <ul>
+      <li>Back Pain, Knee Pain, Neck Pain, Arthritis</li>
+      <li>Spondylosis, Frozen Shoulder, Sciatica</li>
+      <li>Muscle Strain, Weakness, Postural Problems</li>
+      <li>Ligament & Overuse Injuries</li>
+      <li>Core Strengthening, Post-Op & Neuro Rehab</li>
+      <li>Joint & Sports Rehab, TKR/THR/ACL Rehab</li>
+      <li>Gait & Balance Training</li>
+      <li>Cardiac Rehabilitation</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nandhu Physiotherapy Clinic & Rehab. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("mainNav").classList.toggle("show");
+    }
+  </script>
+</body>
+</html>

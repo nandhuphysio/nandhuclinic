@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About - Nandhu Physiotherapy Clinic & Rehab</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #17252a;
+    }
+
+    header {
+      background: #2b7a78;
+      color: white;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 0;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.8rem;
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+      cursor: pointer;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0.5rem 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .about-content {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: #17252a;
+    }
+
+    .info-icon {
+      color: #2b7a78;
+      margin-right: 0.5rem;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #def2f1;
+      margin-top: 2rem;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #2b7a78;
+        padding-bottom: 1rem;
+      }
+
+      nav.show {
+        display: flex;
+      }
+
+      nav a {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+      }
+
+      header h1 {
+        font-size: 1.3rem;
+      }
+
+      .about-content {
+        padding: 1.5rem 1rem;
+        margin: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Nandhu Physiotherapy Clinic & Rehab</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="timings.html">Timings</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="about-content">
+    <h2>Meet Dr. Nandhagopal.C(PT)</h2>
+    <p><i class="fas fa-hand-holding-heart info-icon"></i> Providing personalized, evidence-based care with compassion and expertise.</p>
+    <p><i class="fas fa-laptop-medical info-icon"></i> <strong>Online Consultations:</strong> Physio, Psychology, Nutrition & Diet — easy appointment booking available.</p>
+    <p><i class="fas fa-home info-icon"></i> <strong>Home Visits:</strong> Manual therapy, therapeutic exercises, electrotherapy, stretching & strengthening programs.</p>
+    <p><i class="fas fa-heartbeat info-icon"></i> We focus on full recovery, wellness, and long-term health with a modern, friendly approach.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Nandhu Physiotherapy Clinic & Rehab. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("mainNav").classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
